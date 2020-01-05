@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Update Bio
+{% endblock %}
+
+{% block main %}
+    <form action="/bio" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="bio" placeholder="New Bio" type="text">
+        <button class="btn btn-primary b" type="submit">Update Bio</button>
+    </form>
+{% endblock %}

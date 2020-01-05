@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Update Patient Revenue
+{% endblock %}
+
+{% block main %}
+    <form action="/revenue" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="type" placeholder="New Patient Revenue" type="number">
+        <button class="btn btn-primary b" type="submit">Update Revenue</button>
+    </form>
+{% endblock %}

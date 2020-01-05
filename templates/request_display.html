@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Request Display
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Hospital</th>
+                <th>Supply Requested</th>
+                <th>Brand</th>
+                <th>Amount</th>
+                <th>Version</th>
+                <th>Department</th>
+                <th>Respond</th>
+            </tr>
+        </thead>
+        {% for request in hospital %}
+            <tr>
+                <td>{{ request["hospital_name"]}}</td>
+                <td>{{ request["supply_name"]}}</td>
+                <td>{{ request["brand"]}}</td>
+                <td>{{ request["amount"]}}</td>
+                <td>{{ request["version"]}}</td>
+                <td>{{request["department"]}}</td>
+                <td>
+                    <form action="/respond" method="get">
+                         <button class="btn btn-primary b" type="submit">Respond</button>
+                    </form>
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

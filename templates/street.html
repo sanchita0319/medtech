@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Update Name
+{% endblock %}
+
+{% block main %}
+    <form action="/street" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="street" placeholder="New Street" type="text">
+        <button class="btn btn-primary b" type="submit">Update Street</button>
+    </form>
+{% endblock %}

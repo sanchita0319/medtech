@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Profiles
+{% endblock %}
+
+{% block main %}
+      <table style="width:30%;display:inline-block">
+        {% for item in list %}
+
+        <table class="table table-responsive">
+            <thead>
+                <tr>
+                    <td colspan = "3"><h3>{{ item["name"] }}<h3></td>
+
+                </tr>
+            </thead>
+
+            <tr align = "left">
+                <th>Address</th>
+                <td>{{ item["street"] }}</td>
+            </tr>
+            <tr align = "left">
+                <th>City</th>
+                <td>{{ item["city"] }}</td>
+            </tr>
+            <tr align = "left">
+                <th>Areas of Specialization</th>
+                <td>{{ item["areas"] }}</td>
+            </tr>
+            <tr align = "left">
+                <th>Type of Control</th>
+                <td>{{ item["control"] }}</td>
+            </tr>
+            <tr align = "left">
+                <th>Patient Revenue</th>
+                <td>{{ item["type"] }}</td>
+            </tr>
+            <tr align = "left">
+                <th>Primary Supply Contact</th>
+                <td>{{ item["contact"] }}</td>
+            </tr>
+            <tr align = "left">
+                <th>Bio</th>
+                <td>{{ item["bio"] }}</td>
+            </tr>
+        {%endfor%}
+    </table>
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    My Profile
+{% endblock %}
+
+{% block main %}
+        {% for item in me %}
+            <div>
+               <table class="table table-striped">
+                    <tr>
+                        <td><a href="/name">Hospital Name</a>: {{ item["name"] }}</td>
+                    </tr>
+                    <tr>
+                        <td><a href="/street">Street</a>: {{ item["street"] }}</td>
+                        <td><a href="/website">Website</a>: {{ item["website"] }}</td>
+                    </tr>
+                    <tr>
+                        <td><a href="/city">City</a>: {{ item["city"] }}</td>
+                        <td><a href="/phone_number">Phone Number</a>: {{ item["number"] }}</td>
+                    </tr>
+                    <tr>
+                        <td><a href="/areas_of_specialization">Areas of Specialization</a>: {{ item["areas"] }}</td>
+                        <td><a href="/type_of_control">Type of Control</a>: {{ item["control"] }}</td>
+
+                    <tr>
+                        <td><a href="/hospital">Type of Hospital</a>: {{ item["type"] }}</td>
+                        <td><a href="/revenue">Patient Revenue:</a> {{ item["revenue"] }}</td>
+                    </tr>
+                    <tr>
+                        <td><a href="/contact">Primary Supply Contact</a>: {{ item["contact"] }}</td>
+                    </tr>
+                    <tr>
+                        <td><a href="/bio">Bio</a>: {{ item["bio"] }}</td>
+                    </tr>
+            </div>
+        {%endfor%}
+{% endblock %}

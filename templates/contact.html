@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Update Supply Contact
+{% endblock %}
+
+{% block main %}
+    <form action="/contact" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="contact" placeholder="New Primary Supply Contact" type="text">
+        <button class="btn btn-primary b" type="submit">Update Primary Supply Contact</button>
+    </form>
+{% endblock %}

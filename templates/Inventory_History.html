@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Inventory History
+{% endblock %}
+
+{% block main %}
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Supply</th>
+                <th>Brand</th>
+                <th>Year</th>
+                <th>Department</th>
+                <th>Quantity</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        {% for item in history %}
+            <tr>
+                <td>{{ item["name"] }}</td>
+                <td>{{ item["brand"] }}</td>
+                <td>{{ item["year"] }}</td>
+                <td>{{ item["department"] }}</td>
+                <th>{{ item["quantity"] }}</th>
+                <td>{{ item["date"] }}</td>
+            </tr>
+        {%endfor%}
+
+    </table>
+
+{% endblock %}

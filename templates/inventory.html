@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Inventory
+{% endblock %}
+
+{% block main %}
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Supply</th>
+                <th>Department</th>
+                <th>Year of Model</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        {% for item in inventory %}
+            <tr>
+                <td>{{ item["name"] }}</td>
+                <td>{{ item["department"] }}</td>
+                <td>{{ item["year"] }}</td>
+                <th>{{ item["quantity"] }}</th>
+            </tr>
+        {%endfor%}
+
+    </table>
+
+{% endblock %}
