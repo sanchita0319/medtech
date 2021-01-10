@@ -1,4 +1,4 @@
-#Overview
+# Overview #
 
 This project is a python flask application. This website, Medtech enables hospitals to trade excess supplies one anonther. This allows larger hospitals to reduce waste and smaller hospitals to benefit from the resources of larger hospitals. 
 
