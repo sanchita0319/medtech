@@ -2,7 +2,7 @@
 
 This project is a python flask application. This website, Medtech enables hospitals to trade excess supplies one anonther. This allows larger hospitals to reduce waste and smaller hospitals to benefit from the resources of larger hospitals. 
 
-#How to use
+## How to use ##
 After navigating to the website, the the user will be promped to login, and if the user does not have an account, they can proceed to create an account, with a username, password, and password confirmation. After that the user will be redirected to the create profile section, where they will fill out information about their hospital.
 
 In order to utilize the profiles feature in the website click on the Profile drop down menu and click on my profile. Here you can see everything about your particular hospital. To add to the profile click on the feature that you wish to add to and then input it into the form to update it. By clicking profiles you can also see the other hospitals profiles.
